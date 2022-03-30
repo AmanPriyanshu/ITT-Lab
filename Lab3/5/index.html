@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+function compute()
+                  {
+                  var a=document.desg.telno.value;
+
+                  if(a.length<10)
+                        {
+alert("Enter the phone no");
+return false;
+                  }
+                  return true;
+}
+</script>
+</head>
+<form name="desg" action="chk.jsp">
+<body>
+Enter the telephone Number<input type="text" name="telno">
+<input type="submit" value="Calculate"
+onClick="return compute()">
+</body>
+</form>
+</html>
+<html>
+<body>
+<%String tn=request.getParameter("telno"); 
+String acode=tn.substring(0,3);
+String f4=tn.substring(3,7);
+String l3=tn.substring(7,10);
+%>
+Areacode<input type="text" name="ac" value=<%=acode%>><br>
+first 3digit phone no <input type="text" name="f3" value=<%=f4%>><br>
+Last 4digit phone no <input type="text" name="l4" value=<%=l3%>>
+</body>
+</html>
