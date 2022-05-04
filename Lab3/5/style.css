@@ -1,0 +1,28 @@
+#squareTable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    font-style: italic;
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#squareTable td, #squareTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+  
+#squareTable tr:nth-child(even){
+    background-color: #e4e4e4;
+}
+  
+#squareTable tr:hover {
+    background-color:aqua
+}
+  
+#squareTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #2417df;
+    color: white;
+}

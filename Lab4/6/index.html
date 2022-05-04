@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    // Function to change webpage background color
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    
+</script>
+</head>
+<body>
+    <h1 id="heading">This is a heading</h1>
+    <p>This is a paragraph of text.</p>
+    <hr>
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onmouseover="changeBodyBg('green');">green</button>
+        <button type="button" onmouseover="changeBodyBg('lime');">Lime</button>
+        <button type="button" onmouseover="changeBodyBg('orange');">Orange</button>
+        <button type="button" onmouseover="changeBodyBg('red');">red</button>
+        <button type="button" onmouseover="changeBodyBg('grey');">grey</button>
+        <button type="button" onmousemove="changeBodyBg('yellow');">yellow</button>
+    </div>
+    <br>
+    
+</body>
+</html>

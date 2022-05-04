@@ -4,9 +4,10 @@ function validateUSN() {
     var inputUSN = document.querySelector("#USN").value;
     console.log(inputUSN);
     var res = USN_pattern.test(inputUSN);
-    if (!res || inputUSN.length!=10) {
+    if (!res) {
         alert("Invalid USN");
         return;
     }
-    alert("Your USN " + inputUSN + " is valid.");
+    var semester = document.getElementById("sem").value;
+    alert("Your USN " + inputUSN + " is valid.\nYour semeter is " + semester);
 }
